@@ -143,6 +143,132 @@ hi link SpecialComment  Special
 hi link Debug           Special
 
 
+
+" pandoc markdown syntax highlighting "{{{
+" ---------------------------------------------------------------------
+
+"PandocHiLink pandocNormalBlock
+hi pandocTitleBlock               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocTitleBlockTitle          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocTitleComment             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocComment                  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocVerbatimBlock            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi link pandocVerbatimBlockDeep         pandocVerbatimBlock
+hi link pandocCodeBlock                 pandocVerbatimBlock
+hi link pandocCodeBlockDelim            pandocVerbatimBlock
+hi pandocBlockQuote               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader1        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader2        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader3        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader4        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader5        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuoteLeader6        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocListMarker               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocListReference            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+" Definitions
+" ---------------------------------------------------------------------
+hi pandocDefinitionBlock              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocDefinitionTerm               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocDefinitionIndctr             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisDefinition           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisNestedDefinition     guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisDefinition     guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisNestedDefinition   guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisEmphasisDefinition guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrikeoutDefinition          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocVerbatimInlineDefinition     guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSuperscriptDefinition        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSubscriptDefinition          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+" Tables
+" ---------------------------------------------------------------------
+hi pandocTable                        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocTableStructure               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi link pandocTableStructureTop             pandocTableStructre
+hi link pandocTableStructureEnd             pandocTableStructre
+hi pandocTableZebraLight              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocTableZebraDark               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisTable                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisNestedTable          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisTable          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisNestedTable    guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisEmphasisTable  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrikeoutTable               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocVerbatimInlineTable          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSuperscriptTable             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSubscriptTable               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+" Headings
+" ---------------------------------------------------------------------
+hi pandocSetexHeader	guifg=#65E17B   guibg=NONE   gui=bold   ctermfg=NONE   ctermbg=NONE   cterm=NONE
+hi pandocListItem	guifg=#38E156   guibg=NONE   gui=bold   ctermfg=NONE   ctermbg=NONE   cterm=NONE
+hi pandocAtxHeader	guifg=#3EC2D5   guibg=NONE   gui=bold   ctermfg=NONE   ctermbg=NONE   cterm=NONE
+
+hi pandocHeading                      guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocHeadingMarker                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisHeading              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisNestedHeading        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisHeading        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisNestedHeading  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisEmphasisHeading guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrikeoutHeading             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocVerbatimInlineHeading        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSuperscriptHeading           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSubscriptHeading             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+" Links
+" --------------------------------------------------------------------
+hi pandocLinkDelim                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkLabel                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkText                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkURL                  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkTitle                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkTitleDelim           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkDefinition           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocLinkDefinitionID         guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocImageCaption             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocFootnoteLink             guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocFootnoteDefLink          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocFootnoteInline           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocFootnote                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocCitationDelim            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocCitation                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocCitationID               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocCitationRef              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+" Main Styles
+" ---------------------------------------------------------------------
+hi pandocStyleDelim               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEmphasis                  guifg=#FFFFB6      guibg=NONE      gui=BOLD     ctermfg=blue          ctermbg=NONE      cterm=NONE
+hi pandocEmphasisNested           guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasis            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisNested      guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrongEmphasisEmphasis   guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocStrikeout                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocVerbatimInline            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSuperscript              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocSubscript                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+
+hi pandocRule                     guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocRuleLine                  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocEscapePair                guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocCitationRef               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocNonBreakingSpace          guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi link pandocEscapedCharacter          pandocEscapePair
+hi link pandocLineBreak                 pandocEscapePair
+
+" Embedded Code
+" ---------------------------------------------------------------------
+hi pandocMetadataDelim            guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocMetadata                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocMetadataKey              guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocMetadata                 guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi link pandocMetadataTitle             pandocMetadata
+
+"}}}
+
+
 " Special for Ruby
 hi rubyRegexp                  guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
 hi rubyRegexpDelimiter         guifg=#FF8000      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
