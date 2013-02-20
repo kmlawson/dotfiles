@@ -4,7 +4,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme ir_black
 set guifont=Inconsolata:h18
 imap kj <Esc>
 let g:snips_author = "K. M. Lawson"
