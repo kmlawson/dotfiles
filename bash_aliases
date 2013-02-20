@@ -1,25 +1,60 @@
-alias t='/Users/fool/shell/scripts/todo.sh -d /Users/fool/.todo'
+# Aliases here borrow heavily from mathiasbynens and others
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# Shortcuts
+alias d="cd ~/Documents/Dropbox"
+alias art='cd ~/Documents/Docs/Articles'
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias m="mate ."
+alias o="open"
+alias oo="open ."
+
+alias edv='mvim ~/.vimrc'
+alias eda='mvim ~/.bash_aliases'
+
 alias lr='ls -R'
 alias ls='ls -G'
-alias vi='vim'
 alias v='mvim'
+# Command line and GUI versions of Spideroak:
 alias spider=/Applications/SpiderOak.app/Contents/MacOS/SpiderOak
+alias spideroak='open /Applications/SpiderOak.app/'
+
+# Used for cleaning up file names in downloads:
 alias cleanlinks='for f in *; do mv -- "$f" "${f//_/ }"; done'
-alias bbup='rsync -avE --delete /Users/fool/Documents/Docs/Books/ /Volumes/Pergamum/Books' 
+
 alias myip='MYIP=`curl -s 'http://checkip.dyndns.org' | grep -o "[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*"`; echo $MYIP; echo $MYIP > /Users/fool/Documents/Dropbox/shell/nanna-ip.txt'
+
 alias eda='mvim ~/.bash_aliases'
-alias art='cd ~/Documents/Docs/Articles'
+
 # Unzip and untar:
 alias uz='tar xvfz'
-alias edv='mvim ~/.vimrc'
+
 # Quit and application softly by name:
 alias q='appswitch -qa'
 
 
 alias apps='ps-ax'
-alias spideroak='open /Applications/SpiderOak.app/'
 
-alias mstart='sudo /Library/StartupItems/MySQL/MySQL start'
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
+# (useful when executing time-consuming commands)
+alias badge="tput bel"
 
