@@ -22,7 +22,11 @@ alias eda='mvim ~/.bash_aliases'
 
 alias lr='ls -R'
 alias ls='ls -G'
+alias ld='ls -lth'                  # list by date (recent first)
+alias dirs='ls -alFG | grep /'      # list directories
 alias v='mvim'
+
+alias preview='open -a "Preview" '
 # Command line and GUI versions of Spideroak:
 alias spider=/Applications/SpiderOak.app/Contents/MacOS/SpiderOak
 alias spideroak='open /Applications/SpiderOak.app/'
@@ -42,6 +46,8 @@ alias q='appswitch -qa'
 
 
 alias apps='ps-ax'
+alias mytree="find . -type d | sed -e 1d -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|-/' | /usr/local/bin/bbedit -t `pwd`"
+
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -57,4 +63,8 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
+
+alias newn='mvim ~/Dropbox/Elements/new.md'
+alias sl='cd ~/shell/'
+alias il='cd ~/shell/installs/'
 
