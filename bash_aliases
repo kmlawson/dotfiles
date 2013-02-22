@@ -20,6 +20,7 @@ alias oo="open ."
 
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
+alias edp='mvim ~/.bash_profile'
 
 alias lr='ls -R'
 alias ls='ls -G'

@@ -14,8 +14,8 @@ set -o vi
 source ~/.bash_completion.d/todo_completer.sh
 complete -F _todo_sh -o default t
 
-
-PS1='\h:\w\$ '
+# Bash Prompt Customization: [time user] path $
+PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;37m\]\w\[\033[m\] \$ "
 PS2='> '
 
 
