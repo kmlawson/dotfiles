@@ -1,7 +1,6 @@
 SHELL=/bin/bash
 export EDITOR=/usr/bin/vim
 export CVS_RSH=ssh
-export CVSROOT=:ext:kmlawson@cvs.sourceforge.net:/cvsroot/owls
 export CLICOLOR="true"
 export DISPLAY=:0.0
 PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/usr/local/share/python:${PATH}"
