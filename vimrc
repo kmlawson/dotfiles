@@ -14,7 +14,8 @@ set laststatus=2
 set ruler
 " Don't show intro message
 set shortmess=atI
-
+" Always show line numbers:
+set number
 filetype plugin indent on
 syntax enable
 set background=dark
