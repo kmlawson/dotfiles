@@ -17,6 +17,9 @@ alias dt="cd ~/Desktop"
 alias m="mate ."
 alias o="open"
 alias oo="open ."
+alias g="git"
+alias h="history"
+alias sudo='sudo '
 
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
@@ -38,7 +41,8 @@ alias cleanlinks='for f in *; do mv -- "$f" "${f//_/ }"; done'
 
 alias myip='MYIP=`curl -s 'http://checkip.dyndns.org' | grep -o "[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*"`; echo $MYIP; echo $MYIP > /Users/fool/Documents/Dropbox/shell/nanna-ip.txt'
 
-alias eda='mvim ~/.bash_aliases'
+# SSH to my Raspberry Pi
+alias berry='ssh pi@berry'
 
 # Unzip and untar:
 alias uz='tar xvfz'

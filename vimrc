@@ -1,6 +1,20 @@
 set nocompatible
 set mouse=a
 execute pathogen#infect()
+" Central swap files
+set backupdir=~/.backups
+set directory=~/.swaps
+" Highlight curren line
+set cursorline
+" Ignore case
+set ignorecase
+" Show status line always:
+set laststatus=2
+" Show cursor position:
+set ruler
+" Don't show intro message
+set shortmess=atI
+
 filetype plugin indent on
 syntax enable
 set background=dark

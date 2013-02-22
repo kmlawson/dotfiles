@@ -3,6 +3,9 @@ export EDITOR=/usr/bin/vim
 export CVS_RSH=ssh
 export CLICOLOR="true"
 export DISPLAY=:0.0
+export LESS_TERMCAP_md="$ORANGE"
+export MANPAGER="less -X"
+
 PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/usr/local/share/python:${PATH}"
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
@@ -14,7 +17,7 @@ source ~/.bash_completion.d/todo_completer.sh
 complete -F _todo_sh -o default t
 
 # Bash Prompt Customization: [time user] path $
-PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;37m\]\w\[\033[m\] \$ "
+PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;33m\]\w\[\033[m\] \$ "
 PS2='> '
 
 
@@ -26,3 +29,22 @@ PS2='> '
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$@"
+}
+
+# Determine size of a file or total size of a directory
+function fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh
+	else
+		local arg=-sh
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@"
+	else
+		du $arg .[^.]* *
+	fi
+}
