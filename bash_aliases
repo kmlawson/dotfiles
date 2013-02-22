@@ -66,6 +66,6 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias badge="tput bel"
 
 alias newn='mvim ~/Dropbox/Elements/new.md'
-alias sl='cd ~/shell/'
+alias sl='cd ~/shell/; ls'
 alias il='cd ~/shell/installs/'
 
