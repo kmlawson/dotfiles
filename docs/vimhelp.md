@@ -108,7 +108,8 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		* ds" delete quotations around current block
 	fugitive.vim
 		:Gstatus - git status
-		:Gcommit
+		:Gcommit - opens buffer for commit message, save and close to commit
+		:Gwrite - save and stage the file
 		:Gblame
 		:Gmove - git mv
 		:Gremove - git rm and deletes the buffer
