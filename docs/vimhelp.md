@@ -80,7 +80,9 @@
 
 ## Working with Files
 
-	ZZ	write current file and quite (normal)
+Some of these assume you are in the file browser (after, for example :e.)j
+
+	ZZ	write current file and quit (normal)
 	:e 	edit a file in new buffer
 	:bn	next buffer
 	:bp	previous buffer
@@ -88,11 +90,11 @@
 	:e.	Show the native file explorer for pwd
 	:E	Explore the directory of the active buffer
 	:Ve	Verticle split explore directory of active buffer
-	%	create a new file
-	d	create a new directory
-	R	rename file under cursor
-	D	delete file or directory under cursor
-	c-^	switch back to buffer from file browser
+	%	create a new file from file browser
+	d	create a new directory from file browser
+	R	rename file under cursor from file browser
+	D	delete file or directory under cursor from file browser
+	c-^	switch back to buffer from file browser from file browser
 	:vs.	show file browser in split window vertical
 
 ## Plugins
@@ -111,7 +113,7 @@
 		:Gmove - git mv
 		:Gremove - git rm and deletes the buffer
 	snipmate
-		pandoc:
+		pandoc markdown snippets:
 			[<tab> sets up a link
 			[:<tab> creates []: http://url "title"
 			[@<tab> creates [](mailto:email)
