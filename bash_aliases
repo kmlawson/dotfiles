@@ -9,8 +9,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias mark='/Applications/Marked.app/Contents/Resources/mark'
+alias d="cd ~/Dropbox"
+alias dr="cd ~/Documents/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
+alias ref='cd ~/Documents/Docs/Reference; ls'
+alias vh='mark ~/Documents/Docs/Reference/vimhelp.md'
 alias md='cd ~/shell/writing/; ls'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -23,6 +27,7 @@ alias sudo='sudo '
 
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
+alias sa='source ~/.bash_profile'
 alias edp='mvim ~/.bash_profile'
 
 alias lr='ls -R'
