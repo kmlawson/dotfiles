@@ -16,6 +16,7 @@ set ruler
 set shortmess=atI
 " Always show line numbers:
 set number
+set history=200
 filetype plugin indent on
 syntax enable
 set background=dark
