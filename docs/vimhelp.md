@@ -128,3 +128,23 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		c-o
 	tcomment:
 		gcc	toggle comment for the current line
+	vmail:
+		* when open message, space to full screen it and then space again to go back
+		c-j ,j	to look at next message
+		c-k ,k	to look at previous message
+		G<entr>	to go to bottom of message list and load more
+		,* ,8	to star a message
+		,# ,3	delete message
+		,e	archive a message
+		,! ,1	spam a message
+		U I	mark messae as unread or read
+		u ,u	in message list or message body, this will check for new messages
+		,c	compose message
+		,r	reply message
+		,a	reply all
+		,f	forward message
+		,vs	to send a message when you are done
+		,q	quite composition window
+		,qq	quit vmail
+		,m	switch message box
+			c-p c-n	move up and down choices
