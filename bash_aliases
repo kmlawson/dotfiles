@@ -36,6 +36,12 @@ alias ld='ls -lth'                  # list by date (recent first)
 alias dirs='ls -alFG | grep /'      # list directories
 alias v='mvim'
 
+alias tc='top -c' # then shift-m to sort by memory
+# Show 4 biggest CPU hogs:
+alias psc='ps aux | sort -nk +3 | tail -4'
+# Show 4 biggest memory hogs:
+alias psm='ps aux | sort -nk +4 | tail -4' 
+
 alias preview='open -a "Preview" '
 # Command line and GUI versions of Spideroak:
 alias spider=/Applications/SpiderOak.app/Contents/MacOS/SpiderOak

@@ -16,9 +16,12 @@ set ruler
 set shortmess=atI
 " Always show line numbers:
 set number
+" Remember lots of previous commands:
 set history=200
 filetype plugin indent on
 syntax enable
+" Things seem to slow down significantly with long lines so:
+set synmaxcol=200
 set background=dark
 colorscheme ir_black
 set guifont=Inconsolata:h18
