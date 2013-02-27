@@ -50,7 +50,13 @@
 	m{char}	mark current location with marker {char}
 	zt	set current line at top of window
 	z.	set current line at center of window
+<<<<<<< HEAD
 	zb	set current line at bottom of window
+=======
+	zb	sett current line at bottom of window
+	z=	bring up suggested changes to mispelled words
+	zg	adds a word to the accepted spellings
+>>>>>>> added more from vimcasts
 
 ## Insert Mode
 
@@ -105,6 +111,10 @@ Some of these assume you are in the file browser (after, for example :e.)j
 	c-^	switch back to buffer from file browser from file browser
 	:vs.	show file browser in split window vertical
 
+## Command line options
+
+	:set spell	turn spelling on
+	:set spelllang	set language en_us en_gb
 ## Plugins
 
 	easymotion.vim

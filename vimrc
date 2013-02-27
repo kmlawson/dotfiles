@@ -21,7 +21,10 @@ set history=200
 filetype plugin indent on
 syntax enable
 " Things seem to slow down significantly with long lines so:
+" Note that syntax highlighting will stop after 200 chars in a single line
 set synmaxcol=200
+" Use par for formatting of paragraphs:
+set formatprg=par
 set background=dark
 colorscheme ir_black
 set guifont=Inconsolata:h18
@@ -30,9 +33,13 @@ let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc
 set path=/Users/fool/shell/,/Users/fool/Dropbox/Elements/,/Users/fool/Documents/Docs/Reference/,,
 set wrap linebreak nolist
+<<<<<<< HEAD
 
 " Autosave when lose focus:
 autocmd BufLeave,FocusLost * silent! wall
+=======
+set spelllang=en_gb " I guess I should learn if I'm moving there
+>>>>>>> added more from vimcasts
  
 let mapleader = ","
 
@@ -42,6 +49,8 @@ set listchars=tab:▸\ ,eol:¬
 " REMAPPING:
 " Set shortcut for show invisibles: 
 nmap <leader>l :set list!<CR>
+" Shortcut for turning spell check on:
+nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
@@ -52,7 +61,7 @@ nnoremap j gj
 nnoremap gj j
 " I prefer to move more often by WORDS than by words
 nnoremap w W
-nnoremap w W
+nnoremap W w
 nnoremap e E
 nnoremap E e
 nnoremap b B
