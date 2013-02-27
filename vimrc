@@ -30,6 +30,9 @@ let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc
 set path=/Users/fool/shell/,/Users/fool/Dropbox/Elements/,/Users/fool/Documents/Docs/Reference/,,
 set wrap linebreak nolist
+
+" Autosave when lose focus:
+autocmd BufLeave,FocusLost * silent! wall
  
 let mapleader = ","
 

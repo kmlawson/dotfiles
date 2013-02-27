@@ -28,6 +28,8 @@
 	:{#}	move to line #
 	{#}|	move to column # of current line
 	M	move to middle of window
+	H	move to the top of the window
+	L	move to the bottom of the window
 	; ,	next/last instance of f/F find
 	/	search forward
 	?	search back
@@ -47,7 +49,7 @@
 	u c-r	undo and redo
 	m{char}	mark current location with marker {char}
 	zt	set current line at top of window
-	z.	set current line at center of window
+	z. zz	set current line at center of window
 	zb	sett current line at bottom of window
 
 ## Insert Mode
@@ -55,6 +57,12 @@
 	c-n c-p	autocompletion before or after cursor
 	c-w	delete word before cursor
 	c-w	delete all characters on current line
+	c-o	enter normal mode for one command and return to insert mode
+	c-y	repeat line above
+	c-e	repeat line below
+	c-t	indent to right
+	c-d	indent to left
+	c-y c-e	repeat character at this position from line above, below
 
 ## Visual Mode
 
@@ -99,6 +107,9 @@ Some of these assume you are in the file browser (after, for example :e.)j
 
 ## Plugins
 
+	easymotion.vim
+		* ,,w to show keys to hit to jump to a word
+		* ,,f{char} to show chars to jump to 
 	surround.vim
 		* grab text in visual then S" to surround it with quotes
 		* inside text in normal, cs"' to replace double with single quotes
