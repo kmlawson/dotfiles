@@ -49,8 +49,8 @@
 	u c-r	undo and redo
 	m{char}	mark current location with marker {char}
 	zt	set current line at top of window
-	z. zz	set current line at center of window
-	zb	sett current line at bottom of window
+	z.	set current line at center of window
+	zb	set current line at bottom of window
 
 ## Insert Mode
 
