@@ -53,7 +53,7 @@
 	zb	set current line at bottom of window
 	z=	bring up suggested changes to mispelled words
 	zg	adds a word to the accepted spellings
-	:set spell	turn on spell chec
+	]s [s	next mispelled word
 
 ## Insert Mode
 
@@ -112,6 +112,7 @@ Some of these assume you are in the file browser (after, for example :e.)j
 
 	:set spell	turn spelling on
 	:set spelllang	set language en_us en_gb
+
 ## Plugins
 
 	easymotion.vim
