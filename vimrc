@@ -33,13 +33,9 @@ let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc
 set path=/Users/fool/shell/,/Users/fool/Dropbox/Elements/,/Users/fool/Documents/Docs/Reference/,,
 set wrap linebreak nolist
-<<<<<<< HEAD
-
 " Autosave when lose focus:
 autocmd BufLeave,FocusLost * silent! wall
-=======
 set spelllang=en_gb " I guess I should learn if I'm moving there
->>>>>>> added more from vimcasts
  
 let mapleader = ","
 

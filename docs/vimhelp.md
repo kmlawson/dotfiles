@@ -49,14 +49,11 @@
 	u c-r	undo and redo
 	m{char}	mark current location with marker {char}
 	zt	set current line at top of window
-	z.	set current line at center of window
-<<<<<<< HEAD
+	z. zz	set current line at center of window
 	zb	set current line at bottom of window
-=======
-	zb	sett current line at bottom of window
 	z=	bring up suggested changes to mispelled words
 	zg	adds a word to the accepted spellings
->>>>>>> added more from vimcasts
+	:set spell	turn on spell chec
 
 ## Insert Mode
 
