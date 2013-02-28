@@ -22,12 +22,13 @@ filetype plugin indent on
 syntax enable
 " Things seem to slow down significantly with long lines so:
 " Note that syntax highlighting will stop after 200 chars in a single line
-set synmaxcol=200
+set synmaxcol=800
 " Use par for formatting of paragraphs:
 set formatprg=par
 set background=dark
 colorscheme ir_black
 set guifont=Inconsolata:h18
+let g:vmail_flagged_color="ctermfg=yellow ctermbg=black cterm=bold"
 let g:snips_author = "K. M. Lawson"
 let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc

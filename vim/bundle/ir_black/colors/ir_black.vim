@@ -66,18 +66,18 @@ let colors_name = "ir_black"
 "hi Example         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
 " General colors
-hi Normal           guifg=#f6f3e8     guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Normal           guifg=#f6f3e8     guibg=black       gui=NONE      ctermfg=white        ctermbg=NONE        cterm=NONE
 " hi NonText          guifg=#070707     guibg=black       gui=NONE      ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi Cursor           guifg=black       guibg=white       gui=NONE      ctermfg=black       ctermbg=white       cterm=reverse
-hi LineNr           guifg=#3D3D3D     guibg=black       gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi LineNr           guifg=#3D3D3D     guibg=black       gui=NONE      ctermfg=white    ctermbg=NONE        cterm=NONE
 
 hi VertSplit        guifg=#202020     guibg=#202020     gui=NONE      ctermfg=darkgray    ctermbg=darkgray    cterm=NONE
 hi StatusLine       guifg=#CCCCCC     guibg=#202020     gui=italic    ctermfg=white       ctermbg=darkgray    cterm=NONE
 hi StatusLineNC     guifg=black       guibg=#202020     gui=NONE      ctermfg=blue        ctermbg=darkgray    cterm=NONE  
 
 hi Folded           guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Title            guifg=#f6f3e8     guibg=NONE        gui=bold      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Title            guifg=#f6f3e8     guibg=NONE        gui=bold      ctermfg=white        ctermbg=NONE        cterm=NONE
 hi Visual           guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=REVERSE
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -144,7 +144,12 @@ hi link SpecialChar     Special
 hi link SpecialComment  Special
 hi link Debug           Special
 
-
+hi vmailSizeCol	guifg=#CCFFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
+hi vmailFirstCol guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
+hi vmailFirstColSpec guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
+hi vmailSeperator guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
+hi vmailFromSeperator guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
+hi vmailFirstColAnswered guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
 
 " pandoc markdown syntax highlighting "{{{
 " ---------------------------------------------------------------------
@@ -158,7 +163,7 @@ hi link Debug           Special
 " hi link pandocVerbatimBlockDeep         pandocVerbatimBlock
 " hi link pandocCodeBlock                 pandocVerbatimBlock
 " hi link pandocCodeBlockDelim            pandocVerbatimBlock
-" hi pandocBlockQuote               guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
+hi pandocBlockQuote               guifg=darkgray      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
 " hi pandocBlockQuoteLeader1        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
 " hi pandocBlockQuoteLeader2        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
 " hi pandocBlockQuoteLeader3        guifg=#B18A3D      guibg=NONE      gui=NONE      ctermfg=brown          ctermbg=NONE      cterm=NONE
