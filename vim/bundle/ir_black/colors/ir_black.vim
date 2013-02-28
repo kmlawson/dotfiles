@@ -150,7 +150,7 @@ hi vmailFirstColSpec guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NON
 hi vmailSeperator guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
 hi vmailFromSeperator guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
 hi vmailFirstColAnswered guifg=#99FFFF guibg=NONE gui=NONE ctermfg=white ctermbg=NONE
-
+hi mailQuoted1 guifg=#99FFFF guibg=NONE gui=NONE ctermfg=yellow ctermbg=NONE cterm=NONE
 " pandoc markdown syntax highlighting "{{{
 " ---------------------------------------------------------------------
 

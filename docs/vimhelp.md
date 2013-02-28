@@ -151,10 +151,14 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		* when open message, space to full screen it and then space again to go back
 		c-j ,j	to look at next message
 		c-k ,k	to look at previous message
+		c-x c-u	look for match for what typed so far
+		c-y	select highlighted match from match list without enter
 		G<entr>	to go to bottom of message list and load more
+		u ,u	check for new messages
 		,* ,8	to star a message
 		,# ,3	delete message
 		,e	archive a message
+		,b ,B	move/copy a message to another mailbox
 		,! ,1	spam a message
 		U I	mark messae as unread or read
 		u ,u	in message list or message body, this will check for new messages
