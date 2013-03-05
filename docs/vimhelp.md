@@ -171,3 +171,5 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		,qq	quit vmail
 		,m	switch message box
 			c-p c-n	move up and down choices
+	pandoc snippets:
+		

@@ -11,8 +11,8 @@ alias -- -="cd -"
 # Shortcuts
 alias mark='/Applications/Marked.app/Contents/Resources/mark'
 alias d="cd ~/Dropbox"
-alias st="cd ~/Documents/Docs/St.\ Andrews/"
-alias do="cd ~/Downloads"
+alias sta="cd ~/Documents/Docs/St.\ Andrews/"
+# alias do="cd ~/Downloads"
 alias dr="cd ~/Documents/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
 alias ref='cd ~/Documents/Docs/Reference; ls'

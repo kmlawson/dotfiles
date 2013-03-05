@@ -17,7 +17,7 @@ PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;33m\]\w\[\033[
 PS2='> '
 
 
-# [[ -s "/Users/fool/.rvm/scripts/rvm" ]] && source "/Users/fool/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "/Users/fool/.rvm/scripts/rvm" ]] && source "/Users/fool/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # This not working on desktop, not installed:
 # eval "$(rbenv init -)"
 
