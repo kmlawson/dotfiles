@@ -54,6 +54,7 @@
 	z=	bring up suggested changes to mispelled words
 	zg	adds a word to the accepted spellings
 	]s [s	next mispelled word
+    g c-g   get number of words
 
 ## Insert Mode
 

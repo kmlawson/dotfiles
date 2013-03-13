@@ -22,9 +22,15 @@ filetype plugin indent on
 syntax enable
 " Things seem to slow down significantly with long lines so:
 " Note that syntax highlighting will stop after 200 chars in a single line
-set synmaxcol=800
+set synmaxcol=200
 " Use par for formatting of paragraphs:
 set formatprg=par
+" Set tab info:
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 set background=dark
 colorscheme ir_black
 set guifont=Inconsolata:h18
