@@ -15,6 +15,7 @@ alias sta="cd ~/Documents/Docs/St.\ Andrews/"
 # alias do="cd ~/Downloads"
 alias dr="cd ~/Documents/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
+alias dia='cd ~/Documents/Docs/Me/Log; ls'
 alias ref='cd ~/Documents/Docs/Reference; ls'
 alias vh='mark ~/Documents/Docs/Reference/vimhelp.md'
 alias md='cd ~/shell/writing/; ls'
@@ -26,9 +27,12 @@ alias oo="open ."
 alias g="git"
 alias h="history"
 alias sudo='sudo '
+alias chrome="open -a \"Google Chrome\""
+
 
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
+# Source your profile:
 alias sa='source ~/.bash_profile'
 alias edp='mvim ~/.bash_profile'
 
@@ -38,12 +42,20 @@ alias ld='ls -lth'                  # list by date (recent first)
 alias dirs='ls -alFG | grep /'      # list directories
 alias v='mvim'
 
+# Top CPU hogs:
+alias cpu='top -o cpu'
+# Top Memory hog:
+alias mem='top -o rsize' 
 alias tc='top -c' # then shift-m to sort by memory
 # Show 4 biggest CPU hogs:
 alias psc='ps aux | sort -nk +3 | tail -4'
 # Show 4 biggest memory hogs:
 alias psm='ps aux | sort -nk +4 | tail -4' 
+# Make executable
+alias ax="chmod a+x"
 
+# Show a file in QuickLook:
+alias ql="qlmanage -p &>/dev/null"
 alias preview='open -a "Preview" '
 # Command line and GUI versions of Spideroak:
 alias spider=/Applications/SpiderOak.app/Contents/MacOS/SpiderOak
