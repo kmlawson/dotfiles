@@ -29,8 +29,6 @@ alias h="history"
 alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
 
-alias 
-
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
 # Source your profile:

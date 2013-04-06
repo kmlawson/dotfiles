@@ -10,7 +10,7 @@ PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/usr/local/share/python:$
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
-set -o vi
+set -o emacs
 
 # Bash Prompt Customization: [time user] path $
 PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;33m\]\w\[\033[m\] \$ "
