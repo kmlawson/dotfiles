@@ -29,6 +29,7 @@ alias h="history"
 alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
 
+alias 
 
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
@@ -39,6 +40,8 @@ alias edp='mvim ~/.bash_profile'
 alias lr='ls -R'
 alias ls='ls -G'
 alias ld='ls -lth'                  # list by date (recent first)
+# list by recent modified, only first 10 lines
+alias lm='ls -lth | head'
 alias dirs='ls -alFG | grep /'      # list directories
 alias v='mvim'
 

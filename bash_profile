@@ -44,3 +44,15 @@ function fs() {
 		du $arg .[^.]* *
 	fi
 }
+
+# Function to get cdargs to work:
+
+function cv () {
+           cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
+}
+
+# Add the current directory with the parameter as description
+
+function cap () {
+       cdargs --add=":$1:`pwd`" ;
+}
