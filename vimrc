@@ -88,3 +88,8 @@ endfunc
 
 " Set working directory:
 cd /Users/fool/Documents/Docs/
+command! -bang -nargs=* W :call W(<q-bang>, <q-args>) 
+
+function! W(bang, filename) 
+    :exe "w".a:bang." ". substitute(a:filename, ' ', '\\ ', 'g') 
+endfunc
