@@ -39,6 +39,7 @@ let g:snips_author = "K. M. Lawson"
 let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc
 set path=/Users/fool/shell/,/Users/fool/Dropbox/Elements/,/Users/fool/Documents/Docs/Reference/,,
+set dictionary+=/Users/fool/dotfiles/dict.txt
 set wrap linebreak nolist
 " Autosave when lose focus:
 autocmd BufLeave,FocusLost * silent! wall
