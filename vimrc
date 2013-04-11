@@ -28,6 +28,7 @@ set formatprg=par
 " Set tab info:
 set smartindent
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 
@@ -39,6 +40,7 @@ let g:snips_author = "K. M. Lawson"
 let g:pandoc_no_folding = 1
 au BufNewFile,BufRead *.txt   set filetype=pandoc
 set path=/Users/fool/shell/,/Users/fool/Dropbox/Elements/,/Users/fool/Documents/Docs/Reference/,,
+set dictionary+=/Users/fool/dotfiles/dict.txt
 set wrap linebreak nolist
 " Autosave when lose focus:
 autocmd BufLeave,FocusLost * silent! wall
@@ -88,3 +90,8 @@ endfunc
 
 " Set working directory:
 cd /Users/fool/Documents/Docs/
+command! -bang -nargs=* W :call W(<q-bang>, <q-args>) 
+
+function! W(bang, filename) 
+    :exe "w".a:bang." ". substitute(a:filename, ' ', '\\ ', 'g') 
+endfunc
