@@ -6,8 +6,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
-
+alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
 alias mark='/Applications/Marked.app/Contents/Resources/mark'
 alias d="cd ~/Dropbox"
@@ -18,6 +17,7 @@ alias art='cd ~/Documents/Docs/Articles; ls'
 alias dia='cd ~/Documents/Docs/Me/Log; ls'
 alias ref='cd ~/Documents/Docs/Reference; ls'
 alias vh='mark ~/Documents/Docs/Reference/vimhelp.md'
+alias wl='cd ~/shell/writing/; ls; cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 alias md='cd ~/shell/writing/; ls'
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
