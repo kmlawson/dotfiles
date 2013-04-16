@@ -26,6 +26,8 @@ PS2='> '
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
+rvm use 1.9.3
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$@"
