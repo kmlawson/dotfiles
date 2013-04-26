@@ -31,6 +31,8 @@ alias chrome="open -a \"Google Chrome\""
 
 alias dyw="pday -s 'work'"
 alias dy='pday'
+alias dyl='pday -o -p -l'
+alias dywl="pday -s 'work' -o -p -l"
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
 # Source your profile:
