@@ -8,3 +8,8 @@ pandoc file.md -o output.pdf
 
 pandoc ... -S --latex-engine=xelatex -V geometry:margin=1in
 
+You can use inline LaTeX:
+
+\newpage - forces new page
+\pagebreak - encourages a page break
+
