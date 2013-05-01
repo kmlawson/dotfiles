@@ -133,6 +133,8 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		:Gblame
 		:Gmove - git mv
 		:Gremove - git rm and deletes the buffer
+    pandoc:
+        * :%!pandoc -t markdown -s - will fix footnotes
 	snipmate
 		pandoc markdown snippets:
 			[<tab> sets up a link
@@ -172,5 +174,4 @@ Some of these assume you are in the file browser (after, for example :e.)j
 		,qq	quit vmail
 		,m	switch message box
 			c-p c-n	move up and down choices
-	pandoc snippets:
 		
