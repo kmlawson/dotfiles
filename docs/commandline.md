@@ -79,6 +79,8 @@ cd !$       change directory to last parameter of last command
     * -c concatenate lines together
     * - - - divide standard input into three columns
 
+* cut - cut selected portions of each line of file
+
 * wc -l/-m/-w list the lines/characters/words (only) for file
 
 * sort -f/-g/-n/-r/-o sort fines of file ignoring case/comparing general numerical value/string numberical value/reverse/outputting to file
