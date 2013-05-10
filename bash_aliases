@@ -47,6 +47,11 @@ alias lm='ls -lth | head'
 alias dirs='ls -alFG | grep /'      # list directories
 alias v='mvim'
 
+# Open Files:
+
+alias hs='mark /Users/fool/dotfiles/docs/commandline.md'
+alias hv='mark /Users/fool/dotfiles/docs/vimhelp.md'
+
 # Top CPU hogs:
 alias cpu='top -o cpu'
 # Top Memory hog:
