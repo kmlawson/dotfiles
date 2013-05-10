@@ -9,14 +9,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
 alias mark='/Applications/Marked.app/Contents/Resources/mark'
-alias d="cd ~/Dropbox"
 alias sta="cd ~/Documents/Docs/St.\ Andrews/"
-# alias do="cd ~/Downloads"
+alias d="cd ~/Dropbox"
 alias dr="cd ~/Documents/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
 alias dia='cd ~/Documents/Docs/Me/Log; ls'
 alias ref='cd ~/Documents/Docs/Reference; ls'
-alias vh='mark ~/Documents/Docs/Reference/vimhelp.md'
 alias wl='cd ~/shell/writing/; ls; cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 alias md='cd ~/shell/writing/; ls'
 alias dl="cd ~/Downloads"
@@ -33,11 +31,16 @@ alias dyw="pday -s 'work'"
 alias dy='pday'
 alias dyl='pday -o -p -l'
 alias dywl="pday -s 'work' -o -p -l"
+
+# Edit key files:
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
+alias edhs='mvim ~/dotfiles/docs/commandline.md'
+alias edhv='mvim ~/dotfiles/docs/vimhelp.md'
+alias edp='mvim ~/.bash_profile'
+
 # Source your profile:
 alias sa='source ~/.bash_profile'
-alias edp='mvim ~/.bash_profile'
 
 alias lr='ls -R'
 alias ls='ls -G'
