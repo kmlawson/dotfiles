@@ -16,6 +16,8 @@ set ruler
 set shortmess=atI
 " Always show line numbers:
 set number
+" Spelling on by default
+set spell
 " Remember lots of previous commands:
 set history=200
 filetype plugin indent on
@@ -72,6 +74,15 @@ nnoremap e E
 nnoremap E e
 nnoremap b B
 nnoremap B b
+
+nnoremap <silent> [b :bprevious
+nnoremap <silent> ]b :bnext
+nnoremap [w <C-W>w
+nnoremap [o o<Esc> k
+nnoremap [O O<Esc>
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>ew :e %%
 map <leader>es :sp %%
