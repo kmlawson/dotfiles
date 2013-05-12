@@ -16,6 +16,8 @@ set -o emacs
 PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;33m\]\w\[\033[m\] \$ "
 PS2='> '
 
+# Searches following paths when doing cd:
+CDPATH=".:~:~/Documents/Docs:~/shell"
 
 [[ -s "/Users/fool/.rvm/scripts/rvm" ]] && source "/Users/fool/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # This not working on desktop, not installed:

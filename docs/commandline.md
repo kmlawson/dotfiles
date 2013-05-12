@@ -7,9 +7,13 @@ ctrl k to delete a line forward
 ctrl w delete word/argument left of cursor  
 ctrl z suspend process, then bg command will continue running in bkgnd  
 fg bring a background process back to foreground  
-jobs list jobs running  
+jobs - list jobs running  
 fg %3 bring job three back to foreground  
+nice - run a command at lower priority
+\ - end a line with backslash to continue command
+esc-?   list possible autocompletions
 
+!!          refers to the last command
 !-2         execute second to last command  
 ![word]     executes last command starting with [word]  
 !?[word]?   executes last command containing [word]  
@@ -79,7 +83,9 @@ cd !$       change directory to last parameter of last command
     * -c concatenate lines together
     * - - - divide standard input into three columns
 
-* cut - cut selected portions of each line of file
+* cut - cut selected portions of each line of file and send to standard out
+    * -d{delimiter} - the delimiter for the fields
+    * -f{num} - the number of the field to 
 
 * wc -l/-m/-w list the lines/characters/words (only) for file
 
