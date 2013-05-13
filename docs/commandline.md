@@ -14,6 +14,7 @@ nice - run a command at lower priority
 esc-?   list possible autocompletions
 
 !!          refers to the last command
+!$          last parameter of last command
 !-2         execute second to last command  
 ![word]     executes last command starting with [word]  
 !?[word]?   executes last command containing [word]  
@@ -88,7 +89,8 @@ cd !$       change directory to last parameter of last command
     * -f{num} - the number of the field to 
 
 * wc -l/-m/-w list the lines/characters/words (only) for file
-
+* sleep {num} - wait {num} seconds
+* df -k how much disk space left in kb
 * sort -f/-g/-n/-r/-o sort fines of file ignoring case/comparing general numerical value/string numberical value/reverse/outputting to file
 
 * uniq 
