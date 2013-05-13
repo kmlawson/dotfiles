@@ -6,7 +6,7 @@ pandoc file.md -o output.pdf
 * -S - convert quotes and ellipses to typographically correct versions
 * -V geometry:margin=1in - set the otherwise wide margins to 1in
 
-pandoc ... -S --latex-engine=xelatex -V geometry:margin=1in
+pandoc ... -S --latex-engine=xelatex -V geometry:margin=1in -V papersize:"a4paper"
 
 You can use inline LaTeX:
 
