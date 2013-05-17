@@ -106,3 +106,24 @@ command! -bang -nargs=* W :call W(<q-bang>, <q-args>)
 function! W(bang, filename) 
     :exe "w".a:bang." ". substitute(a:filename, ' ', '\\ ', 'g') 
 endfunc
+
+" :au CursorHold * exe "normal g\<c-g>"
+" :au CursorHoldI * exe "normal g\<c-g>" this is a test
+
+function! WC()
+    if  getline(1) != '' 
+        if &modified || !exists("b:wordcount") 
+                let l:old_status = v:statusmsg  
+                let position = getpos(".") 
+                execute "silent normal g\<c-g>"
+                let b:wordcount = str2nr(split(v:statusmsg)[11])
+                let v:statusmsg = l:old_status 
+                call setpos('.', position) 
+                return b:wordcount
+        else
+                return b:wordcount
+        endif
+    endif
+endfunction 
+
+:set statusline=wc:%{WC()} 
