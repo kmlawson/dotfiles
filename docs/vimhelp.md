@@ -60,6 +60,8 @@
 	zg	adds a word to the accepted spellings         
 	]s [s	next mispelled word                       
     g c-g   get number of words                       
+    ,   leader
+    ,t  make current line title case
 
 ## Insert Mode
 

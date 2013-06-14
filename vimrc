@@ -89,6 +89,7 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 nmap <leader>v :tabedit $MYVIMRC<CR>
+map <leader>t :s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g<CR>
 
 " Functions
 
