@@ -36,6 +36,7 @@
 	; ,	next/last instance of f/F find
 	/	search forward
 	?	search back
+    n/N find next/previous hit for search
     *   search for word under cursor
 	gg	beginning of file
 	{}	move to previous or next paragraph
