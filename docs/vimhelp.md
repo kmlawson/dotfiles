@@ -63,6 +63,8 @@
     g c-g   get number of words                       
     ,   leader
     ,t  make current line title case
+    [o make a blank line under
+    [O make a blank line over
 
 ## Insert Mode
 

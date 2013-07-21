@@ -101,7 +101,8 @@ function! <SID>SynStack()
 endfunc
 
 " Set working directory:
-cd /Users/fool/Documents/Docs/
+autocmd BufEnter * silent! lcd %:p:h
+" cd /Users/fool/Documents/Docs/
 command! -bang -nargs=* W :call W(<q-bang>, <q-args>) 
 
 function! W(bang, filename) 
