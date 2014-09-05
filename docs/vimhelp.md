@@ -126,6 +126,7 @@
 	:tabo	keep active tab open but close others  
 	:tabp	switch to previous tab  
     gt  switch to next tab
+    gT  switch to previous tab
 	c-wq	Quit a window  
 	c-ws	Split windows top and bottom
     c-wv    split window left and right
