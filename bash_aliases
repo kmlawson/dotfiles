@@ -32,6 +32,9 @@ alias dy='pday'
 alias dyl='pday -o -p -l'
 alias dywl="pday -s 'work' -o -p -l"
 
+alias slog="~/shell/slogger/slogger"
+alias do="dayone new"
+
 # Edit key files:
 alias edv='mvim ~/.vimrc'
 alias eda='mvim ~/.bash_aliases'
