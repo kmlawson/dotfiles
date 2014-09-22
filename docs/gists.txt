@@ -1,3 +1,5 @@
+set mylog to "$pomodoroName"do shell script "echo '" & mylog & "' | /usr/local/bin/dayone new"
+
 set mylog to "$pomodoroName"
 do shell script "source ~/.bash_profile; /Users/fool/.rvm/rubies/ruby-1.9.3-p385/bin/ruby ~/shell/scripts/plain-day/lib/pday.rb -p -o -l 'Pomodoro: " & mylog & "'"
 
