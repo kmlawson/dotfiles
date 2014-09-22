@@ -1,0 +1,77 @@
+set mylog to "$pomodoroName"
+do shell script "source ~/.bash_profile; /Users/fool/.rvm/rubies/ruby-1.9.3-p385/bin/ruby ~/shell/scripts/plain-day/lib/pday.rb -p -o -l 'Pomodoro: " & mylog & "'"
+
+
+
+(*
+	
+   Copyright 2009 Konrad M. Lawson
+   This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*)
+
+--Version 1.1
+--THE LOG FILE WHICH KEEPS TOTAL LOG OF ALL DISTRACTIONS:
+set log_file to POSIX file "/Users/fool/Dropbox/Backup/Docs/Me/Statistics/distractions_log.txt"
+--A DUPLICATE LOG FILE WHICH WILL BE OPENED BY THE OTHER SCRIPT WHEN THE POMODORO IS DONE:
+set todo_file to POSIX file "/Users/fool/Dropbox/Backup/Docs/Me/Statistics/distractions.txt"
+
+--This script asks the user what the unplanned task was that made them interrupt their pomodoro
+--Saves it both in a global log file, and in a simple todo file which will be opened (by another script) upon finishing
+--or resetting the Pomodoro, so the user can then perform those tasks and delete them from the simple todo file
+
+--To install this script, open the applescript tab of Pomodoro
+--drag/drop the text of this script into the "Interrupt" box and check it
+--Drag the text of the "open distraction list.scpt" script into the
+--"Reset" and "End" boxes and check those
+
+activate
+set done to false
+repeat while done is false
+	set my_item to text returned of (display dialog "What is the unplanned task you wish to make note of, if any?" default answer "")
+	if my_item is not "" then
+		set my_date to format_date()
+		write_to_file((my_date &amp; tab &amp; "$pomodoroName" &amp; tab &amp; my_item &amp; return), log_file, true)
+		write_to_file((my_date &amp; tab &amp; "$pomodoroName" &amp; tab &amp; my_item &amp; return), todo_file, true)
+		set more to button returned of (display dialog ¬
+			"Do you wish to add another item?" buttons {"Yes", "No"} default button "No")
+		if more is "No" then
+			set done to true
+		end if
+	else
+		set done to true
+	end if
+end repeat
+
+on format_date()
+	set s to current date
+	return ((year of s as string) &amp; "." &amp; (month of s as integer) &amp; "." &amp; (day of s as string) &amp; tab &amp; (hours of s as string) &amp; ":" &amp; (minutes of s as string))
+end format_date
+
+on write_to_file(this_data, target_file, append_data)
+	try
+		set the target_file to the target_file as text
+		set the open_target_file to ¬
+			open for access file target_file with write permission
+		if append_data is false then ¬
+			set eof of the open_target_file to 0
+		write this_data to the open_target_file starting at eof
+		close access the open_target_file
+		return true
+	on error
+		try
+			close access file target_file
+		end try
+		return false
+	end try
+end write_to_file
