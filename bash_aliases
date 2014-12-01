@@ -11,7 +11,7 @@ alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 alias mark='/Applications/Marked.app/Contents/Resources/mark'
 alias sta="cd ~/Documents/Docs/St.\ Andrews/"
 alias d="cd ~/Dropbox"
-alias dr="cd ~/Documents/Dropbox"
+alias dx="cd ~/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
 alias dia='cd ~/Documents/Docs/Me/Log; ls'
 alias ref='cd ~/Documents/Docs/Reference; ls'
@@ -27,6 +27,7 @@ alias h="history"
 alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
 
+# Diary entries
 alias dyw="pday -s 'work'"
 alias dy='pday'
 alias dyl='pday -o -p -l'
@@ -34,6 +35,9 @@ alias dywl="pday -s 'work' -o -p -l"
 
 alias slog="~/shell/slogger/slogger"
 alias do="dayone new"
+alias dn="doing now"
+alias dr="doing done; doing recent 1 | dayone new"
+alias d1="open -a '/Applications/Day One.app'"
 
 # Edit key files:
 alias edv='mvim ~/.vimrc'
