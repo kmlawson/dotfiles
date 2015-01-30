@@ -46,6 +46,19 @@ alias edhs='mvim ~/dotfiles/docs/commandline.md'
 alias edhv='mvim ~/dotfiles/docs/vimhelp.md'
 alias edp='mvim ~/.bash_profile'
 
+# Class Navigation
+
+alias 1008='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO1008\ Modern\ History/Feedback'
+alias 3337='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3337\ China\ Revolutions/Feedback'
+alias 3335='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3335\ Japanese\ Empire/Feedback'
+alias 4971='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO4971\ The\ City\ in\ East\ and\ Southeast\ Asia\ 1850-1950/Feedback'
+alias 3936='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3936\ Evening\ Course\ -\ East\ Asia\ and\ the\ World\ 1850-1950/Feedback'
+alias 3351='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3351/Feedback'
+
+# Feedback Scripts
+alias pfb='~/shell/pfb.rb'
+alias efb='~/shell/efb.rb'
+
 # Source your profile:
 alias sa='source ~/.bash_profile'
 

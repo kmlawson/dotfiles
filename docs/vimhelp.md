@@ -65,6 +65,14 @@
     ,t  make current line title case
     [o make a blank line under
     [O make a blank line over
+    zR un-fold all folded sections
+    zr reduce folding by opening one more level
+    zM close all folds
+    za toggle current fold
+    zc fold current open fold
+    zo open current closed fold
+    
+    
 
 ## Insert Mode
 
