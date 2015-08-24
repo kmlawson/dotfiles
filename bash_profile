@@ -19,9 +19,11 @@ PS2='> '
 # Searches following paths when doing cd:
 CDPATH=".:~:~/Documents/Docs:~/shell"
 
+# Does the following do anything? I don't even have this username or rvm installed on my macbook air:
 [[ -s "/Users/fool/.rvm/scripts/rvm" ]] && source "/Users/fool/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # This not working on desktop, not installed:
 # eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave

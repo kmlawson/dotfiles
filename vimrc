@@ -59,6 +59,7 @@ nmap <leader>l :set list!<CR>
 " Shortcut for turning spell check on:
 nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
+imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
 imap df * 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>

@@ -9,7 +9,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
 alias mark='/Applications/Marked.app/Contents/Resources/mark'
-alias sta="cd ~/Documents/Docs/St.\ Andrews/"
+alias vimhelp='mark ~/dotfiles/docs/vimhelp.md'
+alias sta="cd /Users/kml/Dropbox/St.\ Andrews/Teaching"
 alias d="cd ~/Dropbox"
 alias dx="cd ~/Dropbox"
 alias art='cd ~/Documents/Docs/Articles; ls'
@@ -48,16 +49,27 @@ alias edp='mvim ~/.bash_profile'
 
 # Class Navigation
 
-alias 1008='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO1008\ Modern\ History/Feedback'
-alias 3337='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3337\ China\ Revolutions/Feedback'
-alias 3335='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3335\ Japanese\ Empire/Feedback'
-alias 4971='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO4971\ The\ City\ in\ East\ and\ Southeast\ Asia\ 1850-1950/Feedback'
-alias 3936='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3936\ Evening\ Course\ -\ East\ Asia\ and\ the\ World\ 1850-1950/Feedback'
+alias 1008='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO1008/Feedback'
+alias 3337='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3337/Feedback'
+alias 3335='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3335/Feedback'
+alias 4971='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO4971/Feedback'
+alias 3936='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3936/Feedback'
 alias 3351='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3351/Feedback'
+alias 3424='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/MO3424/Feedback'
+alias 4999='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/Undergraduate\ Dissertation\ Marking'
 
-# Feedback Scripts
-alias pfb='~/shell/pfb.rb'
-alias efb='~/shell/efb.rb'
+# Other Navigation
+
+alias clogs='cd /Users/kml/Dropbox/St.\ Andrews/Clogs'
+
+# Feedback Template Scripts
+alias pfb='~/shell/pfb.rb' # Template for Presentation Feedback
+alias efb='~/shell/efb.rb' # Template for Essay Feedback
+alias dfb='~/shell/dfb.rb' # Template for Undergraduate Dissertation Feedback
+alias gfb='~/shell/gfb.rb' # Template for MO1008 Gobbets
+alias cfb='pandoc -S --latex-engine=xelatex -V geometry:margin=1in -o'
+alias xfb='~/shell/xfb.rb'
+alias markit='~/shell/mark.rb'
 
 # Source your profile:
 alias sa='source ~/.bash_profile'
