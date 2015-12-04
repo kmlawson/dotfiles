@@ -63,6 +63,7 @@ alias 4999='cd /Users/kml/Dropbox/St.\ Andrews/Teaching/Undergraduate\ Dissertat
 alias clogs='cd /Users/kml/Dropbox/St.\ Andrews/Clogs'
 
 # Feedback Template Scripts
+alias fbsetup='~/shell/fbsetup.rb' # New Template Setup script
 alias pfb='~/shell/pfb.rb' # Template for Presentation Feedback
 alias efb='~/shell/efb.rb' # Template for Essay Feedback
 alias dfb='~/shell/dfb.rb' # Template for Undergraduate Dissertation Feedback
