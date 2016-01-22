@@ -145,3 +145,4 @@ alias newn='mvim ~/Dropbox/Elements/new.md'
 alias sl='cd ~/shell/; ls'
 alias il='cd ~/shell/installs/'
 
+
