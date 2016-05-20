@@ -71,6 +71,7 @@ alias gfb='~/shell/gfb.rb' # Template for MO1008 Gobbets
 alias cfb='pandoc -S --latex-engine=xelatex -V geometry:margin=1in -o'
 alias xfb='~/shell/xfb.rb'
 alias markit='~/shell/mark.rb'
+alias marktwo='~/shell/marktwo.rb'
 
 # Source your profile:
 alias sa='source ~/.bash_profile'
