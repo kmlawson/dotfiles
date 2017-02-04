@@ -20,7 +20,7 @@ PS2='> '
 CDPATH=".:~:~/Documents/Docs:~/shell"
 
 # Does the following do anything? I don't even have this username or rvm installed on my macbook air:
-[[ -s "/Users/fool/.rvm/scripts/rvm" ]] && source "/Users/fool/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # This not working on desktop, not installed:
 # eval "$(rbenv init -)"
 eval "$(rbenv init -)"
@@ -30,7 +30,6 @@ eval "$(rbenv init -)"
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
-# rvm use 1.9.3
 
 # Create a new directory and enter it
 function mkd() {

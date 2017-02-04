@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
-alias mark='/Applications/Marked.app/Contents/Resources/mark'
+alias mark='~/dotfiles/coms/mark.sh'
 alias vimhelp='mark ~/dotfiles/docs/vimhelp.md'
 alias sta="cd /Users/kml/Dropbox/St.\ Andrews/Teaching"
 alias d="cd ~/Dropbox"
