@@ -25,6 +25,9 @@ CDPATH=".:~:~/Documents/Docs:~/shell"
 # eval "$(rbenv init -)"
 eval "$(rbenv init -)"
 
+# Add to python path:
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
@@ -61,3 +64,21 @@ function cv () {
 function cap () {
        cdargs --add=":$1:`pwd`" ;
 }
+
+export PATH="$PATH:/Applications/Muse"
+
+export DYLD_FALLBACK_LIBRARY_PATH="$DYLD_FALLBACK_LIBRARY_PATH:/Applications/Muse"
+
+##
+# Your previous /Users/kml/.bash_profile file was backed up as /Users/kml/.bash_profile.macports-saved_2018-02-22_at_21:51:38
+##
+
+# MacPorts Installer addition on 2018-02-22_at_21:51:38: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
