@@ -1,4 +1,4 @@
-SHELL=/bin/bash
+SHELL=/usr/local/bin/bash
 export EDITOR=/usr/bin/vim
 export CVS_RSH=ssh
 export CLICOLOR="true"
