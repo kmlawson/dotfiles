@@ -32,7 +32,8 @@ set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
+" This will change all tabs into spaces:
+" set expandtab
 
 set background=dark
 colorscheme ir_black

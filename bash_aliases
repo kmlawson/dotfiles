@@ -86,8 +86,8 @@ alias v='mvim'
 
 # Open Files:
 
-alias hs='mark /Users/fool/dotfiles/docs/commandline.md'
-alias hv='mark /Users/fool/dotfiles/docs/vimhelp.md'
+alias hs='mark ~/dotfiles/docs/commandline.md'
+alias hv='mark ~/dotfiles/docs/vimhelp.md'
 
 # Top CPU hogs:
 alias cpu='top -o cpu'
@@ -146,4 +146,5 @@ alias newn='mvim ~/Dropbox/Elements/new.md'
 alias sl='cd ~/shell/; ls'
 alias il='cd ~/shell/installs/'
 
-
+# Deploy home page to server:
+alias deploym='cd ~/shell/sites/muninn/; rsync -v -rz --checksum --exclude-from "not-jekyll.txt" --delete -e "ssh -p 2222" _site/ muninn@muninn.net:/home1/muninn/public_html/'
