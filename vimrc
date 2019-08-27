@@ -24,7 +24,7 @@ filetype plugin indent on
 syntax enable
 " Things seem to slow down significantly with long lines so:
 " Note that syntax highlighting will stop after 200 chars in a single line
-set synmaxcol=200
+set synmaxcol=900
 " Use par for formatting of paragraphs:
 set formatprg=par
 " Set tab info:
@@ -48,20 +48,20 @@ set wrap linebreak nolist
 " Autosave when lose focus:
 autocmd BufLeave,FocusLost * silent! wall
 set spelllang=en_gb " I guess I should learn if I'm moving there
- 
+
 let mapleader = ","
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
 " REMAPPING:
-" Set shortcut for show invisibles: 
+" Set shortcut for show invisibles:
 nmap <leader>l :set list!<CR>
 " Shortcut for turning spell check on:
 nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
 imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
-imap df * 
+imap df *
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
 " Remap so that default move is display lines not real lines:
@@ -105,29 +105,29 @@ endfunc
 " Set working directory:
 autocmd BufEnter * silent! lcd %:p:h
 " cd /Users/fool/Documents/Docs/
-command! -bang -nargs=* W :call W(<q-bang>, <q-args>) 
+command! -bang -nargs=* W :call W(<q-bang>, <q-args>)
 
-function! W(bang, filename) 
-    :exe "w".a:bang." ". substitute(a:filename, ' ', '\\ ', 'g') 
+function! W(bang, filename)
+    :exe "w".a:bang." ". substitute(a:filename, ' ', '\\ ', 'g')
 endfunc
 
 " :au CursorHold * exe "normal g\<c-g>"
 " :au CursorHoldI * exe "normal g\<c-g>" this is a test
 
 " function! WC()
-"     if  getline(1) != '' 
-"         if &modified || !exists("b:wordcount") 
-"                 let l:old_status = v:statusmsg  
-"                 let position = getpos(".") 
+"     if  getline(1) != ''
+"         if &modified || !exists("b:wordcount")
+"                 let l:old_status = v:statusmsg
+"                 let position = getpos(".")
 "                 execute "silent normal g\<c-g>"
 "                 let b:wordcount = str2nr(split(v:statusmsg)[11])
-"                 let v:statusmsg = l:old_status 
-"                 call setpos('.', position) 
+"                 let v:statusmsg = l:old_status
+"                 call setpos('.', position)
 "                 return b:wordcount
 "         else
 "                 return b:wordcount
 "         endif
 "     endif
-" endfunction 
-" 
-" :set statusline=wc:%{WC()} 
+" endfunction
+"
+" :set statusline=wc:%{WC()}

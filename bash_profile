@@ -1,5 +1,4 @@
 SHELL=/usr/local/bin/bash
-# SHELL=/bin/bash - this is the 3.2 version
 export EDITOR=/usr/bin/vim
 export CVS_RSH=ssh
 export CLICOLOR="true"
@@ -25,6 +24,9 @@ CDPATH=".:~:~/Documents/Docs:~/shell"
 # This not working on desktop, not installed:
 # eval "$(rbenv init -)"
 eval "$(rbenv init -)"
+
+# Add to python path:
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
@@ -73,6 +75,3 @@ export PATH
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
-
-# added by Anaconda3 5.2.0 installer
-export PATH="/Users/kml/anaconda3/bin:$PATH"

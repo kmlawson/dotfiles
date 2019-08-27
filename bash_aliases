@@ -28,6 +28,9 @@ alias h="history"
 alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
 
+# alias python="python3"
+# alias pip="pip3"
+
 # Diary entries
 alias dyw="pday -s 'work'"
 alias dy='pday'
