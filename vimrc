@@ -61,7 +61,7 @@ nmap <leader>l :set list!<CR>
 nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
 imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
-imap df *
+imap df * 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
 " Remap so that default move is display lines not real lines:
