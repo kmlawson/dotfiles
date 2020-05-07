@@ -61,6 +61,8 @@ nmap <leader>l :set list!<CR>
 nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
 imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
+imap kke <em></em><Esc>F<i
+imap kkx <em><a href=""></a></em><Esc>F"lli
 imap df - 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
@@ -82,6 +84,9 @@ nnoremap <silent> ]b :bnext
 nnoremap [w <C-W>w
 nnoremap [o o<Esc> k
 nnoremap [O O<Esc>
+" Take a line with a URL followed by a line of text and then add URL to it as
+" href tag.
+nnoremap [a <Esc>I<a href="<Esc>A"><Esc>gJA</a><Esc>
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
@@ -92,6 +97,9 @@ map <leader>ev :vsp %%
 map <leader>et :tabe %%
 nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>t :s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g<CR>
+
+
+
 
 " Functions
 
