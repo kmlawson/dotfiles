@@ -10,6 +10,21 @@ alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
 alias mark='~/dotfiles/coms/mark.sh'
 alias mgo="cd ../; mkcd"
+alias el="cd ~/Dropbox/Elements"
+alias noff="networksetup -setairportpower en0 off" # turn off wifi
+alias non="networksetup -setairportpower en0 on" # turn on wifi
+
+alias fx="/Applications/Firefox.app/Contents/MacOS/firefox" # firefox
+alias ft="/Applications/Firefox.app/Contents/MacOS/firefox -new-tab" # firefox open new tab
+
+alias kf="sudo killall Finder" # Restart Finder
+
+# TEMP:
+alias dj="/Users/kml/Desktop/Chinese\ Newspapers/downloadjournal.sh"
+alias c='curl  -o "#1.jpg" --cookie ../../cookies.txt --limit-rate 100k'
+alias cs='curl -O --cookie ../../cookies.txt'
+
+
 alias w='wget --wait=1'
 alias vimhelp='mark ~/dotfiles/docs/vimhelp.md'
 alias sta="cd /Users/kml/Dropbox/St.\ Andrews/Teaching"
@@ -40,7 +55,7 @@ alias dyl='pday -o -p -l'
 alias dywl="pday -s 'work' -o -p -l"
 
 alias slog="~/shell/slogger/slogger"
-alias do="dayone new"
+alias doo="dayone2 new"
 alias dn="doing now"
 alias dr="doing done; doing recent 1 | dayone new"
 alias d1="open -a '/Applications/Day One.app'"
