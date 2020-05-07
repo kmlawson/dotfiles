@@ -102,6 +102,7 @@ alias ld='ls -lth'                  # list by date (recent first)
 # list by recent modified, only first 10 lines
 alias lm='ls -lth | head'
 alias dirs='ls -alFG | grep /'      # list directories
+alias lsd='ls -d */' # another way to list directories
 alias v='mvim'
 
 # Open Files:
