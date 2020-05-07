@@ -9,6 +9,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias cdl='cd $(ls -lt | grep ^d | head -1 | cut -b 45-)'
 # Shortcuts
 alias mark='~/dotfiles/coms/mark.sh'
+alias mgo="cd ../; mkcd"
+alias w='wget --wait=1'
 alias vimhelp='mark ~/dotfiles/docs/vimhelp.md'
 alias sta="cd /Users/kml/Dropbox/St.\ Andrews/Teaching"
 alias d="cd ~/Dropbox"
@@ -107,9 +109,6 @@ alias ax="chmod a+x"
 # Show a file in QuickLook:
 alias ql="qlmanage -p &>/dev/null"
 alias preview='open -a "Preview" '
-# Command line and GUI versions of Spideroak:
-alias spider=/Applications/SpiderOak.app/Contents/MacOS/SpiderOak
-alias spideroak='open /Applications/SpiderOak.app/'
 
 # Used for cleaning up file names in downloads:
 alias cleanlinks='for f in *; do mv -- "$f" "${f//_/ }"; done'
