@@ -63,6 +63,7 @@ imap kj <Esc>
 imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
 imap kke <em></em><Esc>F<i
 imap kkx <em><a href=""></a></em><Esc>F"lli
+imap kka <a href=""></a><Esc>F<i
 imap df - 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>

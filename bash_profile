@@ -45,7 +45,7 @@ CDPATH=".:~:~/Documents/Docs:~/shell:~/Desktop"
 eval "$(rbenv init -)"
 
 # Add to python path:
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 
 

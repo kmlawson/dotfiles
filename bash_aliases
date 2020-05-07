@@ -19,6 +19,8 @@ alias ft="/Applications/Firefox.app/Contents/MacOS/firefox -new-tab" # firefox o
 
 alias kf="sudo killall Finder" # Restart Finder
 
+alias i2="img2pdf * -o "
+
 # TEMP:
 alias dj="/Users/kml/Desktop/Chinese\ Newspapers/downloadjournal.sh"
 alias c='curl  -o "#1.jpg" --cookie ../../cookies.txt --limit-rate 100k'
