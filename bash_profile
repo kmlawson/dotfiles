@@ -6,7 +6,26 @@ export DISPLAY=:0.0
 export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
-PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/usr/local/share/python:${PATH}"
+PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:${PATH}"
+
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
+mkpdf () {
+	dirname=$(basename "$PWD")
+	echo "$dirname.pdf"
+	rename 's/\d+/sprintf("%04d",$&)/e' *.jpg
+	img2pdf *.jpg -o "../$dirname.pdf"
+}
+
+doall () {
+	for d in */; do
+		( cd "$d" && mkpdf )
+	done
+}
+
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
@@ -17,7 +36,7 @@ PS1="\[\033[36m\][\t\[\033[m\] \[\033[36m\]\u]\[\033[m\] \[\033[1;33m\]\w\[\033[
 PS2='> '
 
 # Searches following paths when doing cd:
-CDPATH=".:~:~/Documents/Docs:~/shell"
+CDPATH=".:~:~/Documents/Docs:~/shell:~/Desktop"
 
 # Does the following do anything? I don't even have this username or rvm installed on my macbook air:
 # [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -28,11 +47,6 @@ eval "$(rbenv init -)"
 # Add to python path:
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-PATH="/Users/kml/Library/Python/3.6/bin:${PATH}"
-export PATH
 
 
 # Create a new directory and enter it
@@ -65,6 +79,12 @@ function cv () {
 function cap () {
        cdargs --add=":$1:`pwd`" ;
 }
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH="/Users/kml/Library/Python/3.6/bin:${PATH}"
+export PATH
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
