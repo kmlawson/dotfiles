@@ -46,6 +46,8 @@ alias g="git"
 alias h="history"
 alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
+alias sleep="gsleep"
+alias sl="gsleep"
 
 # alias python="python3"
 # alias pip="pip3"
@@ -163,7 +165,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias badge="tput bel"
 
 alias newn='mvim ~/Dropbox/Elements/new.md'
-alias sl='cd ~/shell/; ls'
+# alias sl='cd ~/shell/; ls'
 alias il='cd ~/shell/installs/'
 
 # Deploy home page to server:
