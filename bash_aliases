@@ -48,6 +48,7 @@ alias sudo='sudo '
 alias chrome="open -a \"Google Chrome\""
 alias sleep="gsleep"
 alias sl="gsleep"
+alias rmd="find . -name '.DS_Store' -type f -delete" # Remove all .DS_Store files recursively under current directory
 
 # alias python="python3"
 # alias pip="pip3"
