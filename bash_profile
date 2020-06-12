@@ -6,6 +6,8 @@ export DISPLAY=:0.0
 export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
+set -o vi # Use VI on the command line to navigate around a command
+
 PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:${PATH}"
 
 mkcd () {
