@@ -15,6 +15,36 @@ mkcd () {
   cd "$1"
 }
 
+kurl () {
+	# Assumes $1 is pause in seconds between requests
+	# Assumes $2 is URL, with [x-y] as range inside it
+	# Assumes output is .jpg file
+	if [ -z "$1" ]  2> /dev/null; then
+		echo "No parameters found. Exiting."
+		return 1
+	fi
+	if [ -z "$2" ] 2> /dev/null; then
+		echo "No second parameter found with URL. Exiting."
+		return 1
+	fi
+	if ! [ "$1" -eq "$1" ] 2>/dev/null; then
+		echo "The first parameter does not appear to be an integer. Exiting."
+		return 1
+	fi
+	# Doesn't check if there is a missing or valid [x-y] range in the URL
+	rangestart=`echo "$2" | gsed -E 's/.*\[([^-]*)-.*/\1/'`
+	rangeend=`echo "$2" | gsed -E 's/.*\[.*-([^]]*)\].*/\1/'`
+	i=$rangestart
+	while [ "$i" -le "$rangeend" ]; do # no variables in  {x..y} loop
+		url=`echo "$2" | gsed -E "s/\[[^]]*\]/$i/"`
+		echo "Downloading $i of $rangeend."
+		curl "$url" -o "$i.jpg"
+		sleep $1
+		i=$(($i+1))
+	done
+}
+
+
 mkpdf () {
 	dirname=$(basename "$PWD")
 	echo "$dirname.pdf"
