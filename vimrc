@@ -60,11 +60,17 @@ nmap <leader>l :set list!<CR>
 " Shortcut for turning spell check on:
 nmap <silent> <leader>s :set spell!<CR>
 imap kj <Esc>
-imap kd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
-imap kke <em></em><Esc>F<i
+" imap kdd <C-R>=strftime("%Y.%m.%d - ")<CR><Esc>
+" imap kke <em></em><Esc>F<i
 imap kkx <em><a href=""></a></em><Esc>F"lli
-imap kka <a href=""></a><Esc>F<i
+imap jfa <a href=""></a><Esc>F<i
 imap df - 
+imap [b ****<Esc>hi
+imap [i **<Esc>i
+imap [1 # 
+imap [2 ## 
+imap [3 ### 
+imap [4 #### 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
 " Remap so that default move is display lines not real lines:

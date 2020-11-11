@@ -8,7 +8,7 @@ export MANPAGER="less -X"
 
 set -o vi # Use VI on the command line to navigate around a command
 
-PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:${PATH}"
+PATH="/usr/local/bin:/usr/local/sbin:/usr/local/go/bin:/:/Users/kml/shell/bin:${PATH}"
 
 mkcd () {
   mkdir "$1"
